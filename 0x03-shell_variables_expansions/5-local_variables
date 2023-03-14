@@ -1,2 +1,2 @@
 #!/bin/bash
-set -o local
+diff set.sorted printenv.sorted | grep "<" | cut -d ' ' -f 2
